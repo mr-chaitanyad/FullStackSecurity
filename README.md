@@ -1,6 +1,5 @@
-# Project Title
+# Full Stack Security System
 
-A simple project README that displays 4 images in a table format and includes instructions to start the frontend and backend.
 
 ---
 
@@ -17,31 +16,31 @@ A simple project README that displays 4 images in a table format and includes in
   </tr>
 </table>
 
-> Replace `assets/image1.png` etc. with your actual image paths.
 
 ---
 
 ## 🚀 How to Run the Project
 
 ### 1️⃣ Start Project
-```bash
+
 
 ### Start Backend
-
+```bash
 cd backend
 npm install
 npm start
-
+```
 
 ### Start Frontend
-
+```bash
 In the project directory, you can run:
 
 npm start
 
-Runs the app in the development mode.\
+Runs the app in the development mode.
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
+The page will reload when you make changes.
 You may also see any lint errors in the console.
+```
 
