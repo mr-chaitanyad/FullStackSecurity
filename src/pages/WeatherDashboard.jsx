@@ -111,7 +111,7 @@ const WeatherDashboard = () => {
   );
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-100 to-indigo-200 p-6">
+    <div className="min-h-screen bg-gradient-to-r from-blue-100 via-purple-100 to-pink-100 px-4 p-6">
       <div className="max-w-4xl mx-auto space-y-6">
         <h1 className="text-3xl font-bold text-center text-indigo-800">🌤️ Weather Dashboard</h1>
 
