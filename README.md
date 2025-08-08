@@ -23,17 +23,21 @@ A simple project README that displays 4 images in a table format and includes in
 
 ## 🚀 How to Run the Project
 
-### 1️⃣ Start Backend
+### 1️⃣ Start Project
 ```bash
+
+### Start Backend
+
 cd backend
 npm install
 npm start
+
 
 ### Start Frontend
 
 In the project directory, you can run:
 
-### `npm start`
+npm start
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
