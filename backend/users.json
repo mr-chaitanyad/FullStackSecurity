@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1754656545596,
+    "name": "Chaitanya Dinesh Dhayarkar",
+    "email": "chaitanyadhayarkar005@gmail.com",
+    "password": "12345678",
+    "role": "admin",
+    "lastLogin": "2025-08-08T15:04:42.252Z"
+  },
+  {
+    "id": 1754658856669,
+    "name": "Raj More",
+    "email": "raj123@mail.com",
+    "password": "1234",
+    "role": "user"
+  },
+  {
+    "id": 1754658950601,
+    "name": "Suresh",
+    "email": "suresh@mail.com",
+    "password": "1234",
+    "role": "user",
+    "lastLogin": "2025-08-08T14:47:06.923Z"
+  },
+  {
+    "id": 1754659637455,
+    "name": "Harsh",
+    "email": "harsh@mail.com",
+    "password": "12345",
+    "role": "user"
+  },
+  {
+    "id": 1754662169261,
+    "name": "Prajwal Pawar",
+    "email": "pp@mail.com",
+    "password": "1234",
+    "role": "user",
+    "lastLogin": "2025-08-08T14:46:08.299Z"
+  },
+  {
+    "id": 1754663286014,
+    "name": "Abdulla Qadeer",
+    "email": "ab@mail.com",
+    "password": "1234",
+    "role": "user"
+  }
+]

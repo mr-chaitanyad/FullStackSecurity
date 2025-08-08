@@ -1,0 +1,116 @@
+<html>
+    <head>
+        <title>
+            Index page
+        </title>
+    </head>
+    <style>
+        .con{
+            background-color: rgb(134, 196, 175);
+            display: flex;
+            width: 400px;
+            height: 300px;
+            justify-content: center;
+            align-items: center;
+            align-self: center;
+            justify-self: center;
+            
+        }
+        
+        .math_btn{
+            justify-content: center;
+            padding: 10px;
+        }
+        .btn{
+            width: 90px;
+            height: 40px;
+            border-radius: 5px;
+            border:none;
+            margin: 10px;
+            cursor: pointer;
+        }
+        .inc{
+            background-color: rgb(241, 94, 94);
+        }
+        .dec{
+            background-color: rgb(25, 151, 25);
+        }
+        .color_box{
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            margin: 10px;
+        }
+        .color_btn{
+            border-radius: 5px;
+            border: none;
+            width: 90px;
+            height: 40px;
+            cursor: pointer;
+        }
+        .popup{
+            justify-content: center;
+            align-content: center;
+            display: flex;
+        }
+        .message_box{
+            display :flex;
+            width: 200px;
+            height: 50px;
+            background-color: rgb(150, 197, 238);
+            border-radius: 5px;
+            padding: 10px;
+            visibility: none;
+            z-index: inherit;
+        }
+        .message_box span{
+            margin: 10px;
+            z-index: initial;;
+        }
+    </style>
+    <body>
+        <div class="con">
+        <form name="f1">
+            <h1 id="counter" value="0">0</h1>
+            <div class="math_btn">
+            <input type="button" class="btn inc" onclick="increment()" value="Increment"/>
+            <input type="button" class="btn dec" onclick="decrement()" value="Decrement"/>
+            </div>
+            <div class="color_box">
+            <input type="color" class="color_btn" onclick="display(event)" value="Select color"/>
+            </div>
+            <div class="popup">
+            <input type="button" class="btn" onclick="popup()" value="Open Box"/>
+            </div>
+        </form>
+        <div class="message_box">
+            <span>Alert: This is message box</span>
+            <button class="btn" onclick="close()" name="close_btn">Close</button>
+        </div>
+        </div>
+        
+    </body>
+    <script>
+        var counter  = 0;
+        
+        let h1_tag = document.getElementById("counter");
+        function increment(){
+            counter++;
+            h1_tag.innerHTML = counter;
+        }
+        setInterval("increment()",1000);
+        function decrement(){
+            counter--;
+            h1_tag.innerHTML = counter;
+        }
+        function display(event){
+           // event.preventDefault();
+            let color = event.target.value;
+            document.body.style.backgroundColor = color
+        }
+        function popup()
+        {
+
+        }
+    </script>
+</html>
