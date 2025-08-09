@@ -9,6 +9,7 @@ const fs = require("fs");
 const path = require("path");
 const authorizeRole = require('./middleware/authorizeRole');
 const DATA_FILE = path.join(__dirname,"users.json");
+const bcrypt = require("bcryptjs");
 
 function readUsers(){
   if(!fs.existsSync(DATA_FILE)){
@@ -37,7 +38,7 @@ var corsOptions = {
 app.use(cors(corsOptions));
 
 
-app.post("/login", (req, res) => {
+app.post("/login", async (req, res) => {
   try {
     const { email, password } = req.body;
     let users = readUsers();
@@ -50,8 +51,11 @@ app.post("/login", (req, res) => {
 
     let user = users[userIndex];
 
+    console.log(user)
+    const isMatch = await bcrypt.compare(password, user.hashedPass);
     // Check password
-    if (user.password !== password) {
+    console.log(isMatch)
+    if (!isMatch) {
       return res.status(401).json({ message: "Invalid credentials", status: false });
     }
 
@@ -79,7 +83,7 @@ app.post("/login", (req, res) => {
 
 
 
-app.post("/signup", (req, res) => {
+app.post("/signup", async (req, res) => {
   try {
     const { name, email, password ,role} = req.body;
 
@@ -90,12 +94,14 @@ app.post("/signup", (req, res) => {
       return res.status(400).json({ message: "Email already registered", status: false });
     }
 
+    const saltRounds = 10;
+    const hashedPass = await bcrypt.hash(password,saltRounds);
     // Create new user object
     const newUser = {
       id: Date.now(),
       name,
       email,
-      password,
+      hashedPass,
       role: role || "user",
     };
 

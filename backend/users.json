@@ -1,47 +1,18 @@
 [
   {
-    "id": 1754656545596,
+    "id": 1754750750278,
+    "name": "Ram Kumar",
+    "email": "ram@mail.com",
+    "hashedPass": "$2b$10$c8MJg7kRYmUAGli/AF/3gOtTfJsa0/x/ggdE./FwGP5LldrNgvn4q",
+    "role": "user",
+    "lastLogin": "2025-08-09T18:28:50.442Z"
+  },
+  {
+    "id": 1754764167992,
     "name": "Chaitanya Dinesh Dhayarkar",
-    "email": "chaitanyadhayarkar005@gmail.com",
-    "password": "12345678",
+    "email": "cd@mail.com",
+    "hashedPass": "$2b$10$RnFKbT0yvfSv4YC673fjBuWK/xT587Nl9AscjaTv0K863fu4PdAQW",
     "role": "admin",
-    "lastLogin": "2025-08-08T15:21:14.058Z"
-  },
-  {
-    "id": 1754658856669,
-    "name": "Raj More",
-    "email": "raj123@mail.com",
-    "password": "1234",
-    "role": "user"
-  },
-  {
-    "id": 1754658950601,
-    "name": "Suresh",
-    "email": "suresh@mail.com",
-    "password": "1234",
-    "role": "user",
-    "lastLogin": "2025-08-08T14:47:06.923Z"
-  },
-  {
-    "id": 1754659637455,
-    "name": "Harsh",
-    "email": "harsh@mail.com",
-    "password": "12345",
-    "role": "user"
-  },
-  {
-    "id": 1754662169261,
-    "name": "Prajwal Pawar",
-    "email": "pp@mail.com",
-    "password": "1234",
-    "role": "user",
-    "lastLogin": "2025-08-08T14:46:08.299Z"
-  },
-  {
-    "id": 1754663286014,
-    "name": "Abdulla Qadeer",
-    "email": "ab@mail.com",
-    "password": "1234",
-    "role": "user"
+    "lastLogin": "2025-08-09T18:29:59.740Z"
   }
 ]
