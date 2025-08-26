@@ -81,11 +81,3 @@ This will start the React frontend on [http://localhost:3000](http://localhost:3
 * 🧪 Unit and integration testing
 
 ---
-
-## 🤝 Contributing
-
-Feel free to fork this repo, make changes, and submit a pull request. Suggestions and improvements are welcome!
-
----
-
-Let me know if you’d like a section on `.env` setup or deployment instructions too.
