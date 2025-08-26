@@ -1,7 +1,3 @@
-Here's an updated and more polished version of your **README** for your **Full Stack Security System** project. I've included a clear mention of the use of **JWT for authentication/authorization** and **password hashing**:
-
----
-
 # 🔐 Full Stack Security System
 
 A robust full-stack security system featuring authentication, authorization, and user management — built using modern web technologies.
